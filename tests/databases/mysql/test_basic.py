@@ -20,6 +20,7 @@ def mysql_local():
     ],
 )
 def test_foo(mysql):
+    assert False
     cursor = mysql['testdb'].cursor()
 
     cursor.execute('select * from foo order by id')
